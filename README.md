@@ -50,61 +50,50 @@ Este projeto é uma aplicação Java desenvolvida com Spring Boot, que visa gere
 - Banco de Dados Oracle ou outro SGBD relacional configurado
 
 ### 3.2 Passos para Executar
-
-1. **Clone o Repositório**
+**Clone o Repositório**
    ```bash
    git clone https://github.com/GLOnodera/odontologia-app.git
    cd odontologia-app
-
-### 3.3 Configure o Banco de Dados 
+   ```
+### 3.3 Configure o Banco de Dados
 No arquivo src/main/resources/application.properties, configure as credenciais do banco de dados Oracle:
-
-spring.datasource.url=jdbc:oracle:thin:@localhost:1521:xe
-spring.datasource.username=seu_usuario
-spring.datasource.password=sua_senha
-spring.jpa.hibernate.ddl-auto=update
-
+   ```bash
+   spring.datasource.url=jdbc:oracle:thin:@localhost:1521:xe
+   spring.datasource.username=seu_usuario
+   spring.datasource.password=sua_senha
+   spring.jpa.hibernate.ddl-auto=update
+   ```
 ### 3.4 Execute a Aplicação 
-
-Para rodar a aplicação, utilize o Maven:
-
-mvn spring-boot:run
-
+   Para rodar a aplicação, utilize o Maven:
+   ```bach
+   mvn spring-boot:run
+   ```
 ### 3.5 Listagem de Endpoints
+   #### 3.5.0 Professor provavelmente o retorno de todos os EndPoints irão dar vazio pois estou tendo problemas de conexão ao Bando de Dados da Fiap 
 
-#### 3.5.0
-Professor provavelmente o retorno de todos os EndPoints irão dar vazio pois estou tendo problemas de conexão ao Bando de Dados da Fiap 
+   #### 3.5.1 GET /consultas
+   Retorna a lista de todas as consultas registradas.
 
-#### 3.5.1 GET /consultas
-Retorna a lista de todas as consultas registradas.
+   #### 3.5.2 POST /consultas
+   Cria uma nova consulta.
 
-#### 3.5.2 POST /consultas
-Cria uma nova consulta.
+   #### 3.5.3 GET /consultas/{id}
+   Retorna uma consulta específica pelo ID.
 
-#### 3.5.3 GET /consultas/{id}
-Retorna uma consulta específica pelo ID.
+   #### 3.5.4 PUT /consultas/{id}
+   Atualiza os dados de uma consulta específica.
 
-#### 3.5.4 PUT /consultas/{id}
-Atualiza os dados de uma consulta específica.
+   #### 3.5.5 DELETE /consultas/{id}
+   Remove uma consulta específica pelo ID.
 
-#### 3.5.5 DELETE /consultas/{id}
-Remove uma consulta específica pelo ID.
+   #### 3.5.6 GET /higiene-bucal
+   Retorna o histórico de hábitos de higiene bucal registrados.
 
-#### 3.5.6 GET /higiene-bucal
-Retorna o histórico de hábitos de higiene bucal registrados.
+   #### 3.5.7 POST /higiene-bucal
+   Registra uma nova atividade de higiene bucal (escovação, fio dental, etc.).
 
-#### 3.5.7 POST /higiene-bucal
-Registra uma nova atividade de higiene bucal (escovação, fio dental, etc.).
+   #### 3.5.8 GET /notificacoes
+   Retorna as notificações de lembretes configurados para o paciente.
 
-#### 3.5.8 GET /notificacoes
-Retorna as notificações de lembretes configurados para o paciente.
-
-#### 3.5.9 POST /notificacoes
-Configura uma nova notificação de lembrete de escovação ou consulta odontológica.
-
-
-
-
-
-
-
+   #### 3.5.9 POST /notificacoes
+   Configura uma nova notificação de lembrete de escovação ou consulta odontológica.
