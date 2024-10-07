@@ -1,8 +1,8 @@
-# Projeto Odontologia App
+# Projeto SmileGuard
 
 ## Descrição Geral
 
-O **Odontologia App** é uma solução tecnológica voltada para a melhoria da experiência dos pacientes e a eficiência das práticas odontológicas. O aplicativo oferece funcionalidades para o registro de consultas, monitoramento de hábitos de higiene bucal e integração com análise preditiva, visando a redução de custos e a sustentabilidade do negócio.
+O **SmileGuard** é uma solução tecnológica voltada para a melhoria da experiência dos pacientes e a eficiência das práticas odontológicas. O aplicativo oferece funcionalidades para o registro de consultas, monitoramento de hábitos de higiene bucal e integração com análise preditiva, visando a redução de custos e a sustentabilidade do negócio.
 
 ## Funcionalidades
 
