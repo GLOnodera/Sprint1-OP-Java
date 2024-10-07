@@ -57,10 +57,11 @@ Este projeto é uma aplicação Java desenvolvida com Spring Boot, que visa gere
    ```
 ### 3.3 Configure o Banco de Dados
 No arquivo src/main/resources/application.properties, configure as credenciais do banco de dados Oracle:
+   ###### **Não está com os meus dados por questão de privacidade de Dados**
    ```bash
-   spring.datasource.url=jdbc:oracle:thin:@localhost:1521:xe
-   spring.datasource.username=seu_usuario
-   spring.datasource.password=sua_senha
+   spring.datasource.url=jdbc:oracle:thin:@SEU_HOST:1521:SEU_DSN
+   spring.datasource.username=SEU_USERNAME
+   spring.datasource.password=SUA_SENHA
    spring.jpa.hibernate.ddl-auto=update
    ```
 ### 3.4 Execute a Aplicação 
@@ -69,7 +70,7 @@ No arquivo src/main/resources/application.properties, configure as credenciais d
    mvn spring-boot:run
    ```
 ### 3.5 Listagem de Endpoints
-   #### 3.5.0 Professor provavelmente o retorno de todos os EndPoints irão dar vazio pois estou tendo problemas de conexão ao Bando de Dados da Fiap 
+   ###### **Professor provavelmente o retorno de todos os EndPoints irão dar vazio pois estou tendo problemas de conexão ao Bando de Dados da Fiap**
 
    #### 3.5.1 GET /consultas
    Retorna a lista de todas as consultas registradas.
